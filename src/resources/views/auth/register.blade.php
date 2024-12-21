@@ -5,7 +5,6 @@
 @endsection
 
 @section('main')
-<x-logo></x-logo>
 
 <div class="register__page">
     <form class="form" action="/register" method="post">

@@ -3,7 +3,6 @@
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 @endsection
-<x-header></x-header>
 
 @section('main')
 <div class="main">
@@ -12,7 +11,13 @@
         <a class="top__mypage">マイページ</a>
     </div>
     <div class="recommendation">
+        <div class="imgContainer">
+            @foreach ($images as $image)
+            <img class="post__img" src="{{ \Storage::url($image->img_url) }}" width="20%">
+            @endforeach
+        </div>
     </div>
+
     <div class="mypage">
         //
     </div>

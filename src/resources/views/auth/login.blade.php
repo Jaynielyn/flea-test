@@ -5,7 +5,6 @@
 @endsection
 
 @section('main')
-<x-logo></x-logo>
 <div class="login__page">
     <form class="form" action="/login" method="post">
         @csrf
